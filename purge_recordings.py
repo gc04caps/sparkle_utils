@@ -7,7 +7,7 @@ def delete_ts_files(ts_file):
    
 
 def purge_recordings():
-    """Remuxes all .ts files in the directory, then empties the "recordings" file."""
+    """Deletes all .ts files in the directory, then empties the "recordings" file."""
     for filename in os.listdir():
         if filename.endswith(".ts"):
             delete_ts_files(filename)
